@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Smash "Zaidimas" </title>
+	<link rel="stylesheet" href="Java.js">
+	<link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+	<div id="overlay">
+		<div id="startGame">
+			<h1> Pradeti zaidima, spauskite start </h1>
+			<button type="button" name="button" onclick="start()">Start</button>
+		</div>
+		<div id="lostGame">
+			<h1>Tu pralaimejai</h1>
+			<h2> Taskai: </h2>
+			<h1 id="lostResult"></h1>
+			<button type="button" name="button" onclick="reset()">Zaisti is naujo</button>
+		</div>
+	</div>
+
+	<div id="result">Result: 0</div>
+	<div id="level">Level: 1</div>
+
+	<div id="game-board">
+		<div class="deadline">
+		</div>
+
+		<div class="minion" id="minion1" onclick="smash('minion1')">
+			<div class="eye"></div>
+		</div>
+
+		<div class="minion" id="minion2" onclick="smash('minion2')" >
+			<div class="eye"></div>
+		</div>
+
+		<div class="minion" id="minion3" onclick="smash('minion3')">
+			<div class="eye"></div>
+		</div>
+
+	</div>
+
+
+	<script type="text/javascript" src="Java.js"></script>
+</body>
+</html>
